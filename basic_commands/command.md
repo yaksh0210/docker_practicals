@@ -1,6 +1,6 @@
-1) sudo docker run [module] = through this we can run nginx, sql , ansible etc images using docker 
+### 1) sudo docker run [module] = through this we can run nginx, sql , ansible etc images using docker 
 
-ex: sudo docker run nginx
+``` sudo docker run nginx 
 
 Unable to find image 'nginx:latest' locally
 latest: Pulling from library/nginx
@@ -36,20 +36,19 @@ Status: Downloaded newer image for nginx:latest
 2024/05/03 06:23:57 [notice] 1#1: start worker process 34
 2024/05/03 06:23:57 [notice] 1#1: start worker process 35
 2024/05/03 06:23:57 [notice] 1#1: start worker process 36
+```
 
+### 2) sudo docker ps = It helps to list out currently running containers
 
-2) sudo docker ps = It helps to list out currently running containers
-
-ex:
-sudo docker ps
+``` sudo docker ps
 
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
 28e5b9ca7ce1   nginx     "/docker-entrypoint.…"   54 seconds ago   Up 54 seconds   80/tcp    hardcore_kilby
+```
 
+### 3) sudo docker ps -a = it will help to list out all runnning as well as previously stopped containers
 
-3) sudo docker ps -a = it will help to list out all runnning as well as previously stopped containers
-
-ex: sudo docker ps -a
+``` sudo docker ps -a
 
 CONTAINER ID   IMAGE             COMMAND                  CREATED              STATUS                         PORTS     NAMES
 28e5b9ca7ce1   nginx             "/docker-entrypoint.…"   About a minute ago   Up About a minute              80/tcp    hardcore_kilby
@@ -57,12 +56,14 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED              S
 83bde0e414f4   ubuntu            "bash"                   57 minutes ago       Exited (0) 55 minutes ago                sleepy_chebyshev
 4e29a6cafc51   ubuntu            "bash"                   57 minutes ago       Exited (0) 57 minutes ago                lucid_albattani
 a97183ffe4f4   hello-world       "/hello"                 About an hour ago    Exited (0) About an hour ago             sweet_black
+```
 
+### 4) sudo docker stop [name_container] = it will stopped the running container 
 
-4) sudo docker stop [name_container] = it will stopped the running container 
+``` docker stop upbeat_shockley
 
-docker stop upbeat_shockley
-upbeat_shockley
+upbeat_shockley ```
+
 
 5) sudo docker rm [Name_continer] = it will permenently remove the container from the process
 
@@ -92,7 +93,6 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED             ST
 5698d0b8e16b   docker/whalesay   "cowsay Hello-World!"    About an hour ago   Exited (0) 59 minutes ago                nostalgic_yalow
 83bde0e414f4   ubuntu            "bash"                   About an hour ago   Exited (0) About an hour ago             sleepy_chebyshev
 4e29a6cafc51   ubuntu            "bash"                   About an hour ago   Exited (0) About an hour ago             lucid_albattani
-
 
 6) sudo docker images = it will display list of all image created using docker previously 
 
