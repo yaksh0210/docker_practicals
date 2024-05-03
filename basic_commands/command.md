@@ -124,7 +124,7 @@ docker/whalesay   latest    6b362a9f73eb   8 years ago     247MB
 
 #### 7) sudo docker rmi [repository_name] = it is used to delete an image from docker which is not in running or stopped state to make sure entier container is deleted with its image file 
 
-# > sudo docker rmi nginx 
+> sudo docker rmi nginx 
 
 ```
 output:
