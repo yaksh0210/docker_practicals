@@ -1,4 +1,4 @@
-# 1 Delete the ubuntu Image.
+### 1 Delete the ubuntu Image.
 
 
 ``` docker rmi ubuntu ```
@@ -7,7 +7,7 @@
 running state nor in stopped)
 
 
-# 2 You are required to pull a docker image which will be used to run a container later. Pull the image nginx:1.14-alpine
+### 2 You are required to pull a docker image which will be used to run a container later. Pull the image nginx:1.14-alpine
 
 
 
@@ -16,7 +16,7 @@ running state nor in stopped)
 (It will only fetch an image from the repo without running container)
 
 
-# 3 Run a container with the nginx:1.14-alpine image and name it webapp
+### 3 Run a container with the nginx:1.14-alpine image and name it webapp
 
 
 
@@ -26,7 +26,7 @@ running state nor in stopped)
 (Run the command docker run -d --name webapp nginx:1.14-alpine 
 and check the status of created container by docker ps command.)
 
-# 4 Cleanup: Delete all images on the host
+### 4 Cleanup: Delete all images on the host
 
 
 
