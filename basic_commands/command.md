@@ -1,8 +1,10 @@
 ### 1) sudo docker run [module] = through this we can run nginx, sql , ansible etc images using docker 
 
-``` sudo docker run nginx ```
+``` command: sudo docker run nginx ```
 
 ```
+output:
+
 Unable to find image 'nginx:latest' locally
 latest: Pulling from library/nginx
 b0a0cf830b12: Pull complete 
@@ -41,17 +43,21 @@ Status: Downloaded newer image for nginx:latest
 
 ### 2) sudo docker ps = It helps to list out currently running containers
 
-``` sudo docker ps ```
+``` command: sudo docker ps ```
 
 ```
+output:
+
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
 28e5b9ca7ce1   nginx     "/docker-entrypoint.…"   54 seconds ago   Up 54 seconds   80/tcp    hardcore_kilby
 ```
 
 ### 3) sudo docker ps -a = it will help to list out all runnning as well as previously stopped containers
 
-``` sudo docker ps -a ```
+``` command: sudo docker ps -a ```
 ```
+output:
+
 CONTAINER ID   IMAGE             COMMAND                  CREATED              STATUS                         PORTS     NAMES
 28e5b9ca7ce1   nginx             "/docker-entrypoint.…"   About a minute ago   Up About a minute              80/tcp    hardcore_kilby
 5698d0b8e16b   docker/whalesay   "cowsay Hello-World!"    47 minutes ago       Exited (0) 46 minutes ago                nostalgic_yalow
@@ -62,18 +68,19 @@ a97183ffe4f4   hello-world       "/hello"                 About an hour ago    E
 
 ### 4) sudo docker stop [name_container] = it will stopped the running container 
 
-``` docker stop upbeat_shockley```
+``` command: docker stop upbeat_shockley```
 
-``` upbeat_shockley ```
+``` output: upbeat_shockley ```
 
 
 ### 5) sudo docker rm [Name_continer] = it will permenently remove the container from the process
 
-*** before "docker rm" ***
 
-``` sudo docker ps -a ```
+``` command: sudo docker ps -a ```
 
 ```
+output:
+
 CONTAINER ID   IMAGE             COMMAND                  CREATED             STATUS                         PORTS     NAMES
 802acd77a105   nginx             "/docker-entrypoint.…"   4 minutes ago       Exited (0) 3 minutes ago                 upbeat_shockley
 28e5b9ca7ce1   nginx             "/docker-entrypoint.…"   14 minutes ago      Exited (0) 8 minutes ago                 hardcore_kilby
@@ -82,12 +89,15 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED             ST
 4e29a6cafc51   ubuntu            "bash"                   About an hour ago   Exited (0) About an hour ago             lucid_albattani
 a97183ffe4f4   hello-world       "/hello"                 About an hour ago   Exited (0) About an hour ago             sweet_black
 ```
-``` docker rm sweet_black ```
-``` sweet_black ```
+``` command: docker rm sweet_black ```
+``` output: sweet_black ```
 
 
-``` docker ps -a ```
+``` command: docker ps -a ```
 ```
+
+output:
+
 CONTAINER ID   IMAGE             COMMAND                  CREATED             STATUS                         PORTS     NAMES
 802acd77a105   nginx             "/docker-entrypoint.…"   4 minutes ago       Exited (0) 3 minutes ago                 upbeat_shockley
 28e5b9ca7ce1   nginx             "/docker-entrypoint.…"   14 minutes ago      Exited (0) 9 minutes ago                 hardcore_kilby
@@ -99,8 +109,10 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED             ST
 ### 6) sudo docker images = it will display list of all image created using docker previously 
 
 
-``` sudo docker images ```
+``` command: sudo docker images ```
 ```
+output:
+
 REPOSITORY        TAG       IMAGE ID       CREATED         SIZE
 ubuntu            latest    bf3dc08bfed0   3 days ago      76.2MB
 nginx             latest    7383c266ef25   9 days ago      188MB
@@ -111,9 +123,11 @@ docker/whalesay   latest    6b362a9f73eb   8 years ago     247MB
 
 ### 7) sudo docker rmi [repository_name] = it is used to delete an image from docker which is not in running or stopped state to make sure entier container is deleted with its image file 
 
-``` sudo docker rmi nginx ```
+``` command: sudo docker rmi nginx ```
 
 ```
+output:
+
 Untagged: nginx:latest
 Untagged: nginx@sha256:ed6d2c43c8fbcd3eaa44c9dab6d94cb346234476230dc1681227aa72d07181ee
 Deleted: sha256:7383c266ef252ad70806f3072ee8e63d2a16d1e6bafa6146a2da867fc7c41759
@@ -128,8 +142,10 @@ Deleted: sha256:52ec5a4316fadc09a4a51f82b8d7b66ead0d71bea4f75e81e25b4094c4219061
 
 ### 8) sudo docker pull [repo] = it is used to pull on image and not runnning the container 
 
-``` sudo docker pull nginx ```
+``` command: sudo docker pull nginx ```
 ```
+output:
+
 Using default tag: latest
 latest: Pulling from library/nginx
 b0a0cf830b12: Pull complete 
