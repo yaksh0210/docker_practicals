@@ -1,9 +1,9 @@
 ### 1) sudo docker run [module] = through this we can run nginx, sql , ansible etc images using docker 
 
-> ``` command: sudo docker run nginx ```
+``` command: sudo docker run nginx ```
 
 ```
-output:
+> output:
 
 Unable to find image 'nginx:latest' locally
 latest: Pulling from library/nginx
@@ -45,7 +45,7 @@ Status: Downloaded newer image for nginx:latest
 
 ``` command: sudo docker ps ```
 
-```
+ ```
 output:
 
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
