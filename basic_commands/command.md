@@ -89,11 +89,13 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED             ST
 4e29a6cafc51   ubuntu            "bash"                   About an hour ago   Exited (0) About an hour ago             lucid_albattani
 a97183ffe4f4   hello-world       "/hello"                 About an hour ago   Exited (0) About an hour ago             sweet_black
 ```
-> docker rm sweet_black 
+> docker rm sweet_black
+
+
 ``` output: sweet_black ```
 
 
-> command: docker ps -a 
+> docker ps -a 
 
 ```
 output:
