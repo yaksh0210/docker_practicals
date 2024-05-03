@@ -3,8 +3,7 @@
 
 ``` ~$ docker rmi ubuntu ```
 
-(make sure that ubuntu container is neither in 
-running state nor in stopped)
+* (make sure that ubuntu container is neither in running state nor in stopped)
 
 
 #### 2 You are required to pull a docker image which will be used to run a container later. Pull the image nginx:1.14-alpine
@@ -13,7 +12,7 @@ running state nor in stopped)
 
 ``` ~$ docker pull nginx:1.14-alpine ```
 
-(It will only fetch an image from the repo without running container)
+* (It will only fetch an image from the repo without running container)
 
 
 #### 3 Run a container with the nginx:1.14-alpine image and name it webapp
@@ -23,8 +22,7 @@ running state nor in stopped)
 
 ``` ~$ docker run -d --name webapp nginx:1.14-alpine ```
 
-(Run the command docker run -d --name webapp nginx:1.14-alpine 
-and check the status of created container by docker ps command.)
+* (Run the command docker run -d --name webapp nginx:1.14-alpine and check the status of created container by docker ps command.)
 
 #### 4 Cleanup: Delete all images on the host
 
@@ -32,5 +30,5 @@ and check the status of created container by docker ps command.)
 
 ``` ~$ docker rmi [image_name / image_id] ```
 
-(it will remove all image one by one)
+* (it will remove all image one by one)
 
