@@ -1,6 +1,6 @@
 ### 1) sudo docker run [module] = through this we can run nginx, sql , ansible etc images using docker 
 
-``` command: sudo docker run nginx ```
+> ``` command: sudo docker run nginx ```
 
 ```
 output:
