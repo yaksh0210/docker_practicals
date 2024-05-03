@@ -3,7 +3,7 @@
 ``` command: sudo docker run nginx ```
 
 ```
-> output:
+output:
 
 Unable to find image 'nginx:latest' locally
 latest: Pulling from library/nginx
