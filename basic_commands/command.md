@@ -1,6 +1,6 @@
 #### 1) sudo docker run [module] = through this we can run nginx, sql , ansible etc images using docker 
 
-> $sudo docker run nginx 
+> ~$ sudo docker run nginx 
 
 ```
 output:
@@ -43,7 +43,7 @@ Status: Downloaded newer image for nginx:latest
 
 #### 2) sudo docker ps = It helps to list out currently running containers
 
-> $sudo docker ps 
+> ~$ sudo docker ps 
 
  ```
 output:
@@ -54,7 +54,7 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS       
 
 #### 3) sudo docker ps -a = it will help to list out all runnning as well as previously stopped containers
 
-> $sudo docker ps -a 
+> ~$ sudo docker ps -a 
 ```
 output:
 
@@ -68,7 +68,7 @@ a97183ffe4f4   hello-world       "/hello"                 About an hour ago    E
 
 #### 4) sudo docker stop [name_container] = it will stopped the running container 
 
-> $docker stop upbeat_shockley
+> ~$ docker stop upbeat_shockley
 
 ``` output: upbeat_shockley ```
 
@@ -76,7 +76,7 @@ a97183ffe4f4   hello-world       "/hello"                 About an hour ago    E
 #### 5) sudo docker rm [Name_continer] = it will permenently remove the container from the process
 
 
-> $sudo docker ps -a 
+> ~$ sudo docker ps -a 
 
 ```
 output:
@@ -89,13 +89,13 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED             ST
 4e29a6cafc51   ubuntu            "bash"                   About an hour ago   Exited (0) About an hour ago             lucid_albattani
 a97183ffe4f4   hello-world       "/hello"                 About an hour ago   Exited (0) About an hour ago             sweet_black
 ```
-> $docker rm sweet_black
+> ~$ docker rm sweet_black
 
 
 ``` output: sweet_black ```
 
 
-> $docker ps -a 
+> ~$ docker ps -a 
 
 ```
 output:
@@ -111,7 +111,7 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED             ST
 #### 6) sudo docker images = it will display list of all image created using docker previously 
 
 
-> $sudo docker images 
+> ~$ sudo docker images 
 
 ```
 output:
@@ -126,7 +126,7 @@ docker/whalesay   latest    6b362a9f73eb   8 years ago     247MB
 
 #### 7) sudo docker rmi [repository_name] = it is used to delete an image from docker which is not in running or stopped state to make sure entier container is deleted with its image file 
 
-> $sudo docker rmi nginx 
+> ~$ sudo docker rmi nginx 
 
 ```
 output:
@@ -145,7 +145,7 @@ Deleted: sha256:52ec5a4316fadc09a4a51f82b8d7b66ead0d71bea4f75e81e25b4094c4219061
 
 #### 8) sudo docker pull [repo] = it is used to pull on image and not runnning the container 
 
-> $sudo docker pull nginx 
+> ~$ sudo docker pull nginx 
 ```
 output:
 
