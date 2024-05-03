@@ -1,6 +1,7 @@
 ### 1) sudo docker run -it [repo][command]  = this will let you logged in container of runnning repo to perform tasks without asking any login credetntials
 
 > sudo docker run -it nginx bash
+
  ``` output: root@8941324cf347:/# ```
 
 ### 2) sudo docker run -d --name "{name}" [repo] = this will create a manual name for the container
