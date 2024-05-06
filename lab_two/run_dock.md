@@ -1,4 +1,4 @@
-#####1) Run an instance of kodekloud/simple-webapp with a tag blue and map port 8080 on the container to 38282 on the host.
+##### 1) Run an instance of kodekloud/simple-webapp with a tag blue and map port 8080 on the container to 38282 on the host.
 
 ###### Image: kodekloud/simple-webapp:blue
 ###### Container Port: 8080
