@@ -45,7 +45,9 @@ Hello and Welcome yaksh!
 
 ```
 
-#### 3) > sudo docker run ubuntu:17.10 cat /etc/*release* = it will pull image of ubutnu version 17.10 and also display it's release version via cat /etc/*release* command
+#### 3) 
+
+> sudo docker run ubuntu:17.10 cat /etc/*release* = it will pull image of ubutnu version 17.10 and also display it's release version via cat /etc/*release* command
 
 
 ```
@@ -78,7 +80,9 @@ VERSION_CODENAME=artful
 UBUNTU_CODENAME=artful
 
 ```
-#### 4) > sudo docker run -d ubuntu sleep 1000 = it will run container in sleep mode for 100 sec in background if we run with -d 
+#### 4) 
+
+> sudo docker run -d ubuntu sleep 1000 = it will run container in sleep mode for 100 sec in background if we run with -d 
 
 ```
 output
@@ -91,7 +95,8 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED              S
 e79ee55a756f   ubuntu            "sleep 1000"             About a minute ago   Up About a minute                     flamboyant_wright
 
 ```
-#### 5) > sudo docker attach e79ee55a756f1cd407bf0880b504e24232928dbd6ac8256672c95ec83561cca9 = by running this command you can take background process to foreground easily
+#### 5) 
+> sudo docker attach e79ee55a756f1cd407bf0880b504e24232928dbd6ac8256672c95ec83561cca9 = by running this command you can take background process to foreground easily
 
 ```
 output:
