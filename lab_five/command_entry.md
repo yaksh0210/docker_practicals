@@ -1,6 +1,6 @@
 #### 1) What is the ENTRYPOINT configured on the mysql image?
 
-> cat Docker_mysql
+> cat Dockermysql
 
 ```
 
@@ -95,7 +95,7 @@ Answer is : docekr-entrypoint.sh
 
 #### 2) What is the CMD configured on the wordpress image?
 
-> cat Docker-wordpress
+> cat Dockerwordpress
 
 
 ```
@@ -194,7 +194,7 @@ Answer is "apache2-foreground"
 #### 3) What is the final command run at startup when the wordpress image is run. Consider both ENTRYPOINT and CMD instructions
 
 
-> cat Docker_wordpress
+> cat Dockerwordpress
 
 ```
 
@@ -297,7 +297,7 @@ Answer is : docker run docker-enterypoint.sh apache2-foreground
 
 #### 5) What is the command run at startup when the ubuntu image is run?
 
-> cat Docker_ubuntu
+> cat Dockerubuntu
 
 
 ``` 
