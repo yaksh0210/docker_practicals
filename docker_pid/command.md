@@ -42,15 +42,19 @@ root          59       0  0 09:29 ?        00:00:00 ps -eaf
 
 > docker exec 64b31f4f4780 ps -eaf
 
+```
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  2 09:25 pts/0    00:00:07 /docker-java-home/jre/bin/java -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dignore.endorsed.dirs= -classpath /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar -Dcatalina.base=/usr/local/tomcat -Dcatalina.home=/usr/local/tomcat -Djava.io.tmpdir=/usr/local/tomcat/temp org.apache.catalina.startup.Bootstrap start
 root          65       0  0 09:31 ?        00:00:00 ps -eaf
 
+```
 > ps -eaf | grep docker-java-home
 
+```
 root      467717  467696  1 14:55 pts/0    00:00:07 /docker-java-home/jre/bin/java -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dignore.endorsed.dirs= -classpath /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar -Dcatalina.base=/usr/local/tomcat -Dcatalina.home=/usr/local/tomcat -Djava.io.tmpdir=/usr/local/tomcat/temp org.apache.catalina.startup.Bootstrap start
 einfoch+  471714  407471  0 15:02 pts/0    00:00:00 grep --color=auto docker-java-home
 
+```
 
 * here we are seeing same process but different PID which is only possible because it is using same process but the Namespace define differently for it 
 
