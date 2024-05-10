@@ -1,0 +1,7 @@
+#Create a docker-compose.yml file under the directory /root/clickcounter. Once done, run docker-compose up.
+
+
+#The compose file should have the exact specification as follows -
+
+#redis service specification - Image name should be redis:alpine.
+#clickcounter service specification - Image name should be kodekloud/click-counter, app is run on port 5000 and expose it on the host port 8085 in the compose file.
